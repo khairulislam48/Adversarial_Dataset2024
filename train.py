@@ -197,8 +197,9 @@ criterion = nn.CrossEntropyLoss()
 
 optimizer = optim.Adam(model.parameters(), lr=lr)
 # scheduler
-scheduler = StepLR(optimizer, step_size=1, gamma=gamma)
+
 model.to(device)
+
 
 
 
